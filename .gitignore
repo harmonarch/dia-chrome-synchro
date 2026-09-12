@@ -1,0 +1,6 @@
+# 运行时数据：含真实书签备份与同步记录，严禁入库
+data/
+dist/
+node_modules/
+*.log
+.DS_Store

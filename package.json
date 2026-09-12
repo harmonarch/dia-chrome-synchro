@@ -1,0 +1,19 @@
+{
+  "name": "dia-chrome-synchro",
+  "version": "1.0.0",
+  "description": "Bifröst —— Dia 与 Chrome 的本地书签/插件同步器（零依赖 Node）",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "sync": "node cli.js sync",
+    "status": "node cli.js status",
+    "agent:install": "bash scripts/install-agent.sh",
+    "agent:uninstall": "bash scripts/uninstall-agent.sh",
+    "test": "node test/run-tests.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
