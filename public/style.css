@@ -225,7 +225,7 @@ main { display: grid; gap: 22px; }
   color: var(--ink-soft); background: transparent;
   transition: transform 0.5s var(--ease-out);
 }
-.flow-dir.flip { transform: scaleX(-1); }
+.flow.reverse .flow-arc path { animation-direction: reverse; }
 
 /* 频率分段控件 */
 .seg {

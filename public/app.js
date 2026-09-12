@@ -87,7 +87,7 @@ function render() {
   }
   // 芯片固定顺序：Dia 在左、Chrome 在右；箭头只表达流向
   $('#flowDir').textContent = primary === 'dia' ? '→' : '←';
-  $('#flowDir').classList.toggle('flip', primary === 'chrome');
+  $('.flow').classList.toggle('reverse', primary === 'chrome');
   $('#directionHint').textContent =
     `以 ${d.browsers[primary].label} 为基准：书签将镜像写入 ${d.browsers[secondary].label}；插件缺失的引导安装、多余的引导移除。`;
 
