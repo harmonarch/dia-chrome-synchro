@@ -1,6 +1,6 @@
 {
   "name": "dia-chrome-synchro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bifröst —— Dia 与 Chrome 的本地书签/插件同步器（零依赖 Node）",
   "type": "commonjs",
   "main": "server.js",

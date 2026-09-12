@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# 构建 Bifrost for macOS：.app（内嵌 node 运行时）→ dist/Bifrost-1.0.0.dmg
+# 构建 Bifrost for macOS：.app（内嵌 node 运行时）→ dist/Bifrost-<版本>.dmg
+# 版本号可用环境变量 BIFROST_VERSION 覆盖（CI 按 git tag 注入），默认 1.0.0
 # 用法：bash mac/build-app.sh [--no-dmg]
 set -euo pipefail
 
@@ -7,7 +8,7 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 MAC="$ROOT/mac"
 DIST="$ROOT/dist"
 APP="$DIST/Bifrost.app"
-VERSION="1.0.0"
+VERSION="${BIFROST_VERSION:-1.0.0}"
 NODE_SRC="$(command -v node)"
 
 if [[ -z "${NODE_SRC}" ]]; then
